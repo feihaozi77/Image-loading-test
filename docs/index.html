@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id='117' src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png" onload="loadImage()" width="100" height="132">
+<h1 id='message'>Not Passed</h1>
+<script>
+    var count = 0;
+    document.body.style.backgroundColor = "red";
+
+function loadImage() {
+    if(count===1){
+        document.body.style.backgroundColor = "green";
+        document.getElementById('message').innerHTML = "Passed the test"
+    }
+    alert("Image is loaded "+count+"times");
+    count+=1;
+
+}
+
+document.getElementById('117').src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png';
+</script>
+
+</body>
+</html>
